@@ -1,0 +1,13 @@
+# PLANTILLA INCOMPLETA: NO CARGAR EN EL SERVIDOR.
+# Fuente: https://docs.nanos-world.com/docs/core-concepts/packages/packages-guide
+# Metadatos verificados: https://github.com/nanos-world/nanos-world-server/blob/main/_meta.toml
+# Consultado: 2026-11-08 (latest a1.166.0).
+# Solo metadatos provisionales; no declara un tipo de paquete.
+# Pendiente: aprobar script o game-mode, completar su sección oficial
+# y comprobar compatibility_version contra la instalación real.
+# No se fija una versión de compatibilidad por suposición.
+
+[meta]
+title = "Naruto RP"
+author = "Symt11"
+version = "0.0.0"
