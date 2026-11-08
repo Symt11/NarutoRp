@@ -1,0 +1,15 @@
+# Ejemplo mínimo para una futura prueba; no validado ejecutando nanos world.
+# Fuente: https://docs.nanos-world.com/docs/core-concepts/server-manual/server-configuration
+# Consultado: 2026-11-08 (latest a1.166.0).
+# Copiar como Config.toml SOLO a una instalación externa del servidor.
+# Las demás opciones quedan a los valores predeterminados de la versión instalada.
+# Nunca guardar contraseñas ni tokens reales en este archivo.
+
+[discover]
+# Oculta el anuncio; NO impide conexiones directas.
+announce = false
+
+[game]
+map = "default-blank-map"
+game_mode = ""
+packages = []

@@ -1,0 +1,29 @@
+# Configuración privada; conservar el ejemplo público.
+Config.toml
+Config.*.toml
+!config/Config.example.toml
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Archivos de ejecución y descargas: mantener la instalación fuera del repositorio.
+/Assets/
+/Cache/
+/Logs/
+/Saved/
+/Binaries/
+/steamapps/
+/steamcmd/
+NanosWorldServer*
+*.exe
+*.dll
+*.so
+*.dylib
+*.log
+*.dmp
+# Archivos locales del equipo.
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
