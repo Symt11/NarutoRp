@@ -5,6 +5,7 @@
 Documento integrado a partir de «Markdown pegado.md» y del maestro inicial. La transcripción de origen se conserva completa más abajo como referencia de diseño; las órdenes conversacionales que contiene no son instrucciones nuevas para ejecutar. Sus apartados marcados como confirmados conservan ese estado; las propuestas y capacidades sin verificar no pasan a ser decisiones aprobadas.
 
 - **CONFIRMADO:** Percepción funciona mediante ventajas pasivas y comprobaciones activas.
+- **CONFIRMADO:** D100 narrativo opcional; reglas, comandos y límites en la sección «Sistema narrativo de dados D100».
 - **PENDIENTE:** detección de chakra. No se presupone su inclusión en Percepción.
 - **PENDIENTE:** usos concretos de Percepción (emboscadas, rastros, trampas), efectos, fórmulas y comprobaciones. Su vínculo parcial con Genjutsu está confirmado; el reparto específico entre detectar, lanzar y deshacer ilusiones sigue siendo una propuesta.
 - **ALCANCE:** terminar el diseño y la documentación. No programar sistemas del juego todavía.
@@ -20,6 +21,124 @@ Documento integrado a partir de «Markdown pegado.md» y del maestro inicial. La
 ### Integración completada
 
 Se ha leído e incorporado íntegramente el archivo de Descargas. Se conserva también el maestro anterior como historial: sus notas de que faltaba el archivo describen la revisión previa y ya no representan el estado actual. La integración documental no verifica por sí sola las capacidades técnicas de nanos world.
+
+## Sistema narrativo de dados D100 — decisiones confirmadas (2026-11-08)
+
+Estas reglas documentan el diseño aprobado; todavía no están implementadas. El D100 no sustituye el combate en tiempo real ni convierte los usos de Percepción en tiradas obligatorias. Percepción sigue siendo mixta y la detección de chakra continúa pendiente.
+
+### 1. Filosofía del D100
+
+El D100 será una herramienta **opcional para el rol narrativo**.
+
+No sustituirá las mecánicas normales del videojuego.
+
+Saltar, esquivar, combatir, lanzar jutsus, desplazarse o entrenar se resolverá mediante las mecánicas correspondientes, sin necesidad de dados.
+
+Los jugadores podrán utilizar dados voluntariamente para resolver situaciones narrativas.
+
+Las tiradas individuales serán libres. Las tiradas que afecten a otros personajes requerirán el consentimiento de los participantes.
+
+Si alguien rechaza utilizar dados, se respetará su decisión. Si surge un conflicto narrativo que impide continuar, podrá solicitarse mediación administrativa, sin imponer el uso de dados.
+
+### 2. Comandos de dados
+
+Existirán dos comandos:
+
+**`/roll`**
+- Lanza un D100 por defecto.
+- Permite elegir dados personalizados entre 2 y 1000 caras.
+- Ejemplos: `/roll`, `/roll 6`, `/roll 20`, `/roll 1000`.
+- Solo permite lanzar un dado por comando.
+- No admite expresiones como `3d6`.
+- No aplica modificadores de atributos.
+
+**`/rollatributo <atributo>`**
+- Lanza un D100 utilizando el atributo indicado del personaje.
+- El modificador será el valor del atributo dividido entre 5.
+- Se redondeará al entero más cercano, con los valores terminados en 0,5 hacia arriba.
+- Ejemplo: `/rollatributo velocidad`.
+- Si una acción requiere dos atributos, se realizan dos tiradas independientes.
+- No se utiliza la combinación de atributos 70/30; queda descartada cualquier propuesta anterior de ese tipo.
+
+### 3. Visualización
+
+Los resultados aparecerán únicamente en el chat de proximidad, utilizando el mismo alcance que el chat de rol.
+
+Las tiradas de atributos mostrarán:
+- Nombre del personaje.
+- Acción o atributo utilizado.
+- Resultado natural del dado.
+- Modificador del atributo.
+- Resultado final.
+
+No será obligatorio mostrar automáticamente si una tirada ha tenido éxito o ha fracasado.
+
+### 4. Reglas narrativas D100
+
+Reglas confirmadas:
+
+- El D100 obtiene resultados entre 1 y 100.
+- Un 1 natural representa un fallo crítico.
+- Un 100 natural representa un éxito extraordinario, sin ignorar requisitos especiales.
+- Los resultados finales pueden superar 100 gracias a los modificadores.
+- Se permiten tiradas individuales y enfrentadas.
+- En enfrentamientos, gana el resultado final más alto, salvo las reglas especiales de resultados naturales.
+- En caso de empate, gana quien tenga mayor atributo relevante. Si también empatan en atributo, se repite la tirada.
+- Si ambos obtienen un 1 natural o ambos un 100 natural, se repite la tirada.
+- Los atributos tienen una influencia moderada, permitiendo que un personaje menos experimentado pueda ganar con una buena tirada.
+
+### 5. Dificultades narrativas de referencia
+
+Tabla confirmada:
+
+| Dificultad | Valor |
+|---|---:|
+| Muy fácil | 15 |
+| Fácil | 30 |
+| Normal | 50 |
+| Difícil | 70 |
+| Muy difícil | 90 |
+| Extrema | 110 |
+| Extraordinaria | 125 |
+
+Estas dificultades son referencias para las tiradas narrativas voluntarias, nunca requisitos obligatorios para ejecutar acciones normales del videojuego.
+
+Las circunstancias pueden modificar la dificultad mediante ±5, ±10 o ±20.
+
+Los modificadores circunstanciales:
+- Pueden acumularse hasta un máximo total de ±30.
+- Solo se acumulan cuando representan efectos diferentes.
+- Pueden ajustarse mediante acuerdo entre participantes.
+- En tiradas enfrentadas, cada personaje tiene sus propias circunstancias.
+
+### 6. Técnicas excepcionales
+
+Un personaje podrá intentar ejecutar excepcionalmente una técnica que todavía no domina, siempre que cumpla los requisitos mínimos de estadísticas y exista una justificación narrativa coherente.
+
+- Cada jutsu tendrá definidos sus costes y consecuencias.
+- Cada jutsu indicará individualmente si necesita autorización administrativa para un intento excepcional.
+- Los intentos habituales podrán acordarse entre los participantes.
+- Ejecutar excepcionalmente un jutsu no significa aprenderlo permanentemente.
+- Todas las acciones excepcionales quedarán registradas automáticamente.
+- Solo los administradores podrán consultar el historial administrativo.
+- Los participantes seguirán viendo los resultados de las tiradas correspondientes en el chat de proximidad.
+
+### 7. Moderación
+
+Los comandos `/roll` y `/rollatributo` no tendrán cooldown.
+
+No se establece una espera de 2 segundos; queda descartada cualquier propuesta anterior de ese tipo.
+
+No habrá avisos automáticos por lanzar dados demasiado rápido.
+
+Si un jugador abusa de los comandos, un administrador podrá advertirle mediante el chat y aplicar las normas habituales del servidor.
+
+### Revisión de coherencia y límites del acuerdo
+
+- Se revisó el maestro anterior: no contenía una sección D100 ni las reglas antiguas de combinación 70/30 o cooldown de 2 segundos. Se incorporan las decisiones actuales y se descartan expresamente esas alternativas, sin afirmar que se hayan eliminado textos inexistentes.
+- El combate híbrido, el entrenamiento, los requisitos y el aprendizaje de jutsus conservan sus decisiones previas. Los intentos excepcionales no conceden aprendizaje permanente ni eximen de los requisitos mínimos o especiales.
+- Los registros administrativos automáticos de acciones excepcionales son una decisión de diseño pendiente de implementación, no una capacidad técnica verificada. No autorizan avisos automáticos por frecuencia de tiradas.
+- No se fija aquí un alcance numérico del chat, una lista de alias de atributos, validaciones de comandos ni costes concretos de jutsus: no han sido definidos en esta solicitud.
 
 ## Diseño de origen — transcripción completa
 
