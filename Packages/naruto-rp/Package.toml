@@ -1,0 +1,17 @@
+# Paquete script inicial sin dependencias ni mecanicas.
+# Fuente: https://github.com/nanos-world/nanos-world-server/blob/main/_script.toml
+[meta]
+title = "Naruto RP"
+author = "Symt11"
+version = "0.1.0"
+
+[script]
+force_no_map_package = false
+auto_cleanup = true
+load_level_entities = false
+# Documentacion latest a1.166.0 consultada el 2026-11-08.
+# Verificar contra la version instalada antes de ejecutar.
+compatibility_version = "1.166"
+packages_requirements = []
+assets_requirements = []
+compatible_game_modes = []

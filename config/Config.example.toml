@@ -1,0 +1,21 @@
+# Ejemplo local: copiar como Config.toml junto al ejecutable, sin sobrescribir
+# una configuracion existente. El servidor completa las claves omitidas.
+# Fuente: https://docs.nanos-world.com/docs/core-concepts/server-manual/server-configuration
+[discover]
+name = "NarutoRP - prueba local"
+ip = "127.0.0.1"
+port = 7777
+query_port = 7778
+announce = false
+dedicated_server = true
+
+[general]
+# Valor temporal de prueba, no capacidad definitiva del proyecto.
+max_players = 4
+
+[game]
+map = "default-blank-map"
+game_mode = ""
+packages = ["naruto-rp"]
+assets = []
+loading_screen = ""
